@@ -18,6 +18,5 @@ def change_size(filename):
 	newimage = cv2.resize(image, (1280,967),
 	                      interpolation=cv2.INTER_AREA)
 	cv2.imwrite('1280_967.bmp', newimage)
+	return newimage
 
-filename = 'test.bmp'
-change_size(filename)
